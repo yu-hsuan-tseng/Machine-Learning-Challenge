@@ -1,0 +1,6 @@
+Machine Learning Challenge 
+Day-3
+
+1. 專案目標為探索新的技術，名為“ Weight Agnostic Neural Network"的技術
+2. 其使用技術依照步驟區分，首先尋找WANN須先透過topology search algorithm，並且插入新的節點，加入連結後改變其原先設定的動作，透過訓練達成其目標
+3. 來源資料為深度學習模組
