@@ -1,0 +1,20 @@
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+f_app = os.path.expanduser('~/Desktop/application_train.csv')
+app_train = pd.read_csv(f_app)
+df_train = pd.DataFrame(app_train)
+df_train.head()
+#app_train.head()
+
+sub_set=df_train[['AMT_INCOME_TOTAL','CODE_GENDER']]
+sub_set.head()
+#df_subset = pd.DataFrame(sub_set)
+#df_subset.head()
+#plt.hist(app_train['AMT_INCOME_TOTAL'])
+#plt.show()
+
+plt.scatter(sub_set['AMT_INCOME_TOTAL'],sub_set['CODE_GENDER'])
